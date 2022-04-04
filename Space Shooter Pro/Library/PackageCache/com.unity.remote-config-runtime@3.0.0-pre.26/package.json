@@ -1,0 +1,72 @@
+{
+  "name": "com.unity.remote-config-runtime",
+  "displayName": "Remote Config Runtime",
+  "version": "3.0.0-pre.26",
+  "unity": "2019.4",
+  "_upm": {
+    "gameService": {
+      "genericDashboardUrl": "https://dashboard.unity3d.com/remote-config",
+      "projectDashboardUrl": "https://dashboard.unity3d.com/organizations/{0}/projects/{1}/environments/{2}/remote-config/configs",
+      "projectDashboardUrlType": "OrganizationKeyAndProjectGuid",
+      "useCasesUrl": "https://docs.unity3d.com/Packages/com.unity.remote-config@3.0/manual/index.html"
+    }
+  },
+  "description": "Remote Config is a cloud service that lets you tune and customize your app over the air without requiring an update to your game.  This package is intended to be inherited as a dependency, and should not be directly installed, by end users. Unity Developers that want to implement Unity Remote Config in their game/application, should use the Remote Config Package `com.unity.remote-config` rather than this package directly.",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.1",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.services.core": "1.2.0",
+    "com.unity.services.authentication": "1.0.0-pre.37"
+  },
+  "keywords": [
+    "remote",
+    "config",
+    "configuration",
+    "settings",
+    "remote settings",
+    "remote config",
+    "firebase",
+    "staged rollouts",
+    "feature flagging",
+    "roll-out",
+    "adapt",
+    "tune",
+    "tailor",
+    "test",
+    "experiment",
+    "experimentation",
+    "app update",
+    "target",
+    "targeting",
+    "segment",
+    "segmentation",
+    "segmenting",
+    "override",
+    "rules",
+    "variants",
+    "variation",
+    "parameter",
+    "conditions",
+    "conditional",
+    "continuous delivery",
+    "deploy"
+  ],
+  "upm": {
+    "changelog": "- Updated `com.unity.services.core` dependency from `1.1.0-pre.41` to `1.2.0`,- Updated `com.unity.nuget.newtonsoft-json` dependency from `2.0.2` to `3.0.1`,- Updated documentation regarding metadata parameters within web response"
+  },
+  "upmCi": {
+    "footprint": "cd3cee17302fdde542b0f5ac297b9db684e2593d"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.remote-config-runtime.git",
+    "type": "git",
+    "revision": "127e98e2d98809e9d843013fe86bc822522658eb"
+  },
+  "samples": [
+    {
+      "displayName": "Example Sample",
+      "description": "This sample example C# file can be used to quickly utilise usage of Remote Config APIs. For more comprehensive code integration, visit https://docs.unity3d.com/Packages/com.unity.remote-config@latest",
+      "path": "Samples~/Example"
+    }
+  ]
+}

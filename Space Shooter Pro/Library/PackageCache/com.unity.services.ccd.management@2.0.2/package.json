@@ -1,0 +1,45 @@
+{
+  "name": "com.unity.services.ccd.management",
+  "displayName": "CCD Management",
+  "version": "2.0.2",
+  "unity": "2019.4",
+  "description": "Cloud Content Delivery (CCD) is a managed cloud service that hosts and delivers live content to your application’s users worldwide. Note: The Addressables package (1.19.6+) contains features that utilize this SDK to manage CCD.",
+  "_upm": {
+    "gameService": {
+      "genericDashboardUrl": "https://dashboard.unity3d.com/cloud-content-delivery",
+      "projectDashboardUrl": "https://dashboard.unity3d.com/organizations/{0}/projects/{1}/cloud-content-delivery",
+      "projectDashboardUrlType": "OrganizationKeyAndProjectGuid",
+      "configurePath": "Project/Services/Cloud Content Delivery"
+    }
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.services.ccd.management.git",
+    "type": "git",
+    "revision": "365a4d6c4b7b3a4dc4e6e1e8d627d598dda5d696"
+  },
+  "dependencies": {
+    "com.unity.services.core": "1.2.0",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+    "com.unity.modules.unitywebrequestaudio": "1.0.0",
+    "com.unity.modules.unitywebrequesttexture": "1.0.0",
+    "com.unity.modules.unitywebrequestwww": "1.0.0",
+    "com.unity.nuget.newtonsoft-json": "3.0.1"
+  },
+  "samples": [
+    {
+      "displayName": "CCD Sample Window",
+      "description": "This is an example of how the CCD Management API SDK could be used to manage resources within a desired project",
+      "path": "Samples~/CcdSampleWindow"
+    }
+  ],
+  "upm": {
+    "changelog": "* Updated Core and NewtonsoftJson dependencies"
+  },
+  "relatedPackages": {
+    "com.unity.services.ccd.management.tests": "2.0.2"
+  },
+  "upmCi": {
+    "footprint": "a3214b58373b1a28de0532372bf3fe67f130345a"
+  }
+}

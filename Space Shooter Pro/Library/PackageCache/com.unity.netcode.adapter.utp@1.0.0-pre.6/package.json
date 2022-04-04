@@ -1,0 +1,22 @@
+{
+  "name": "com.unity.netcode.adapter.utp",
+  "displayName": "Unity Transport for Netcode for GameObjects",
+  "description": "This package is plugging Unity Transport into Netcode for GameObjects, which is a network transport layer - the low-level interface for sending UDP data",
+  "version": "1.0.0-pre.6",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.unity.netcode.gameobjects": "1.0.0-pre.6",
+    "com.unity.transport": "1.0.0-pre.14"
+  },
+  "upm": {
+    "changelog": "### Added,- New parameters are available to simulate network conditions (delay, jitter, packet loss) in the editor and in development builds. The parameters are available under the 'Debug Simulator' section of the 'Unity Transport' component, or can be set with the `SetDebugSimulatorParameters` call. (#1745),- `GetCurrentRtt` is now properly implemented. (#1755),### Changed,- Updated Unity Transport package to 1.0.0-pre.14. (#1760),- Updated Netcode for GameObjects dependency to 1.0.0-pre.6 (#1771),- Overflowing the reliable send queue of a connection will now result in the connection being closed, rather than spamming the log with errors about not being able to send a payload. It is deemed better to close the connection than to lose reliable traffic (which could cause all sorts of weird synchronization issues). (#1747),### Fixed,- Fixed issue where disconnecting from the server with data still in the queue would result in an error message about a stale connection. (#1649),- Fixed issue where the server `NetworkEndPoint` would fail to be created when 'Server Listen Address' is empty. (#1636),- Fixed issue with native collections not all being disposed of when destroying the component without shutting it down properly. This would result in errors in the console and memory leaks. (#1640),- Fixed an issue where packets causing errors would not be removed from the send queue, which would cause the error message to be spammed on every frame as the adapter would try to resend the packet. (#1648),- Fixed and issue where a server would fail to disconnect a client if another client had previously disconnected itself. (#1673)"
+  },
+  "upmCi": {
+    "footprint": "d986f77475d7b32fd15622e3ea5d8582d80ce9a4"
+  },
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git",
+    "type": "git",
+    "revision": "cc3c088aad2bfb1b3da51137057df65b882cad45"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Unity.Netcode.Adapter.UTP.RuntimeTests",
+    "rootNamespace": "Unity.Netcode.UTP.RuntimeTests",
+    "references": [
+        "Unity.Netcode.Runtime",
+        "Unity.Networking.Transport",
+        "Unity.Netcode.Adapter.UTP"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
